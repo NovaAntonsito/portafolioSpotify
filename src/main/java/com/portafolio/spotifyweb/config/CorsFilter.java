@@ -18,7 +18,7 @@ import java.util.List;
 @Slf4j
 public class CorsFilter implements Filter {
 
-    @Value("${cors.allowed-origins:http://localhost:3000,http://localhost:8080}")
+    @Value("${cors.allowed-origins}")
     private String[] allowedOrigins;
 
     @Override
