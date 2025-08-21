@@ -100,7 +100,7 @@ public class SpotifyMusicService {
         try {
             GetPlaylistsItemsRequest playlistItemsRequest = userApi
                     .getPlaylistsItems(miPlaylistID)
-                    .limit(50)                    // Máximo 50 tracks por petición
+                    .limit(80)                    // Máximo 80 tracks por petición
                     .offset(0)                    // Para paginación
                     .additionalTypes("track")     // Solo tracks (no episodes)
                     .build();
